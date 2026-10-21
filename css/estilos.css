@@ -1,0 +1,489 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #f5f5f7;
+    color: #1d1d1f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+    background-color: #161617;
+    color: white;
+    text-align: center;
+    padding-top: 55px;
+}
+
+header > div {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 25px 40px;
+}
+
+header h1 {
+    margin: 4px 0;
+    font-size: 52px;
+    line-height: 1.1;
+}
+
+header p {
+    margin: 5px 0;
+    color: #d2d2d7;
+    font-size: 18px;
+}
+
+header div p:first-child {
+    color: #d5aa55;
+    font-weight: bold;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #000000;
+    padding: 16px 20px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    color: #f5f5f7;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+/* Contenido principal */
+main {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 28px 18px 60px;
+}
+
+section {
+    margin: 28px 0;
+    padding: 60px;
+    background-color: #ffffff;
+    border: 1px solid #e5e5e7;
+    border-radius: 24px;
+}
+
+.titulo-seccion {
+    margin-bottom: 34px;
+    text-align: center;
+}
+
+.titulo-seccion > p {
+    margin: 0 0 6px;
+    color: #7b1e2b;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 0;
+    font-size: 40px;
+    line-height: 1.15;
+}
+
+h3 {
+    margin-top: 0;
+    color: #7b1e2b;
+    font-size: 23px;
+}
+
+h4 {
+    margin-top: 0;
+    color: #7b1e2b;
+    font-size: 20px;
+}
+
+p {
+    margin-top: 0;
+}
+
+a {
+    color: #8c2434;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+strong {
+    color: #6f1725;
+}
+
+/* Portada principal */
+#inicio {
+    padding: 72px 60px;
+    background-color: #fbf7ef;
+}
+
+#inicio > div,
+#inicio > figure {
+    display: inline-block;
+    width: 47%;
+    margin: 0 1%;
+    vertical-align: middle;
+}
+
+#inicio > div {
+    text-align: left;
+}
+
+#inicio > div > p:first-child {
+    margin-bottom: 10px;
+    color: #9b7837;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#inicio h2 {
+    margin-bottom: 20px;
+    font-size: 48px;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 22px;
+    background-color: #7b1e2b;
+    border-radius: 24px;
+    color: white;
+}
+
+/* Imágenes y textos explicativos */
+figure {
+    margin: 30px auto 0;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 18px;
+}
+
+figcaption {
+    max-width: 650px;
+    margin: 10px auto 0;
+    color: #6e6e73;
+    font-size: 14px;
+}
+
+/* Cita destacada */
+aside {
+    margin-top: 35px;
+    padding: 24px 30px;
+    background-color: #fbf7ef;
+    border-left: 6px solid #d5aa55;
+    border-radius: 12px;
+}
+
+blockquote {
+    margin: 0;
+    color: #4b3b27;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border: 1px solid #dedede;
+    border-radius: 14px;
+    background-color: white;
+}
+
+caption {
+    margin-bottom: 14px;
+    color: #6e6e73;
+    font-weight: bold;
+}
+
+th,
+td {
+    padding: 16px;
+    border-bottom: 1px solid #e8e8ea;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: #f5f5f7;
+    color: #6f1725;
+}
+
+/* Tarjetas de la biografía */
+#vida article {
+    display: inline-block;
+    width: 47%;
+    min-height: 275px;
+    margin: 1%;
+    padding: 28px;
+    border: 1px solid #e5e5e7;
+    border-radius: 18px;
+    background-color: #f5f5f7;
+    vertical-align: top;
+}
+
+#vida figure,
+#legado figure {
+    max-width: 760px;
+    padding-top: 10px;
+}
+
+#vida figure img,
+#legado figure img {
+    width: 100%;
+}
+
+/* Obra educativa y Piedad y Letras */
+#obra > article {
+    margin-top: 32px;
+    padding: 32px;
+    border: 1px solid #e5e5e7;
+    border-radius: 18px;
+    background-color: #f5f5f7;
+}
+
+#piedad-letras {
+    background-color: #fbf7ef;
+    border-color: #eadbbd;
+}
+
+#piedad-letras .conceptos {
+    margin-top: 25px;
+    text-align: center;
+}
+
+#piedad-letras .conceptos article {
+    display: inline-block;
+    width: 45%;
+    min-height: 170px;
+    margin: 1%;
+    padding: 24px;
+    border-left: 5px solid #d5aa55;
+    border-radius: 12px;
+    background-color: white;
+    text-align: left;
+    vertical-align: top;
+}
+
+/* Cronología */
+#cronologia ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#cronologia li {
+    display: inline-block;
+    width: 47%;
+    min-height: 130px;
+    margin: 1%;
+    padding: 22px 24px;
+    border-left: 5px solid #7b1e2b;
+    border-radius: 12px;
+    background-color: #f5f5f7;
+    vertical-align: top;
+}
+
+#cronologia time {
+    color: #7b1e2b;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#cronologia li p {
+    margin: 5px 0 0;
+}
+
+/* Dificultades */
+#dificultades {
+    background-color: #1d1d1f;
+    border-color: #1d1d1f;
+    color: #f5f5f7;
+}
+
+#dificultades h2 {
+    color: white;
+}
+
+#dificultades .titulo-seccion > p {
+    color: #e0b966;
+}
+
+/* Tarjetas de valores */
+.tarjetas-valores {
+    margin: 28px 0;
+    text-align: center;
+}
+
+#testimonio article {
+    display: inline-block;
+    width: 30%;
+    min-height: 210px;
+    margin: 1%;
+    padding: 25px;
+    border: 1px solid #e5e5e7;
+    border-radius: 18px;
+    background-color: #f5f5f7;
+    text-align: left;
+    vertical-align: top;
+}
+
+/* Recursos audiovisuales */
+#recursos article {
+    margin-top: 28px;
+    padding: 32px;
+    border: 1px solid #e5e5e7;
+    border-radius: 18px;
+    background-color: #f5f5f7;
+}
+
+#recursos article figure {
+    max-width: 780px;
+}
+
+#recursos article figure img {
+    width: 100%;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    max-width: 780px;
+    margin: 24px auto 0;
+    border: 0;
+    border-radius: 18px;
+}
+
+#recursos ul {
+    margin: 10px 0 0;
+    padding-left: 22px;
+}
+
+#recursos li {
+    margin: 12px 0;
+}
+
+/* Reflexión final */
+#conclusion {
+    background-color: #7b1e2b;
+    border-color: #7b1e2b;
+    color: white;
+}
+
+#conclusion h2,
+#conclusion .titulo-seccion > p {
+    color: white;
+}
+
+/* Bibliografía */
+#fuentes ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+#fuentes li {
+    margin: 14px 0;
+    padding: 18px 22px;
+    border-left: 5px solid #d5aa55;
+    border-radius: 10px;
+    background-color: #f5f5f7;
+}
+
+/* Pie de página */
+footer {
+    padding: 48px 20px;
+    background-color: #161617;
+    color: #d2d2d7;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer strong {
+    color: white;
+    font-size: 20px;
+}
+
+footer a {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 10px 20px;
+    border: 1px solid #d5aa55;
+    border-radius: 22px;
+    color: #f0cb7d;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 760px) {
+    header h1 {
+        font-size: 38px;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 6px 8px;
+    }
+
+    main {
+        padding: 12px;
+    }
+
+    section,
+    #inicio {
+        padding: 38px 24px;
+        border-radius: 18px;
+    }
+
+    h2,
+    #inicio h2 {
+        font-size: 34px;
+    }
+
+    #inicio > div,
+    #inicio > figure,
+    #vida article,
+    #piedad-letras > div article,
+    #cronologia li,
+    #testimonio article {
+        display: block;
+        width: 100%;
+        min-height: 0;
+        margin: 18px 0;
+    }
+
+    th,
+    td {
+        padding: 11px;
+        font-size: 14px;
+    }
+}
