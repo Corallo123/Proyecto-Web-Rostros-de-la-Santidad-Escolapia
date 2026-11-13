@@ -9,8 +9,7 @@ boton.addEventListener("click", function () {
     if (lugar === "" || anio === "" || lema === "") {
         resultado.innerHTML = "Elegí una respuesta para cada pregunta.";
     } else {
-        // El puntaje empieza en cero cada vez que se presiona el botón.let puntaje = 0;
-
+let puntaje = 0;
 // Guardamos las respuestas en el mismo orden.
 const respuestas = [lugar, anio, lema];
 const respuestasCorrectas = ["santa-dorotea", "1597", "piedad-letras"];
