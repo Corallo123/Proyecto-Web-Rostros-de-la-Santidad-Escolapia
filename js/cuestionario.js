@@ -5,22 +5,43 @@ boton.addEventListener("click", function () {
     const lugar = document.getElementById("lugar").value;
     const anio = document.getElementById("anio").value;
     const lema = document.getElementById("lema").value;
+    const destinatarios = document.getElementById("destinatarios").value;
+    const navegacion = document.getElementById("navegacion").value;
 
-    if (lugar === "" || anio === "" || lema === "") {
+    if (
+        lugar === "" ||
+        anio === "" ||
+        lema === "" ||
+        destinatarios === "" ||
+        navegacion === ""
+    ) {
         resultado.innerHTML = "Elegí una respuesta para cada pregunta.";
     } else {
-let puntaje = 0;
-// Guardamos las respuestas en el mismo orden.
-const respuestas = [lugar, anio, lema];
-const respuestasCorrectas = ["santa-dorotea", "1597", "piedad-letras"];
+        let puntaje = 0;
 
-// Recorremos las respuestas y sumamos los aciertos.
-for (let indice = 0; indice < respuestas.length; indice = indice + 1) {
-    if (respuestas[indice] === respuestasCorrectas[indice]) {
-        puntaje = puntaje + 1;
-    }
-}
+        const respuestas = [
+            lugar,
+            anio,
+            lema,
+            destinatarios,
+            navegacion
+        ];
 
-        resultado.innerHTML = "Acertaste " + puntaje + " de 3 preguntas.";
+        const respuestasCorrectas = [
+            "santa-dorotea",
+            "1597",
+            "piedad-letras",
+            "todos",
+            "nav"
+        ];
+
+        for (let indice = 0; indice < respuestas.length; indice = indice + 1) {
+            if (respuestas[indice] === respuestasCorrectas[indice]) {
+                puntaje = puntaje + 1;
+            }
+        }
+
+        resultado.innerHTML =
+            "Acertaste " + puntaje + " de " + respuestas.length + " preguntas.";
     }
 });
