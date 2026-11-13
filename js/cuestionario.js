@@ -9,20 +9,18 @@ boton.addEventListener("click", function () {
     if (lugar === "" || anio === "" || lema === "") {
         resultado.innerHTML = "Elegí una respuesta para cada pregunta.";
     } else {
-        // El puntaje empieza en cero cada vez que se presiona el botón.
-        let puntaje = 0;
+        // El puntaje empieza en cero cada vez que se presiona el botón.let puntaje = 0;
 
-        if (lugar === "santa-dorotea") {
-            puntaje = puntaje + 1;
-        }
+// Guardamos las respuestas en el mismo orden.
+const respuestas = [lugar, anio, lema];
+const respuestasCorrectas = ["santa-dorotea", "1597", "piedad-letras"];
 
-        if (anio === "1597") {
-            puntaje = puntaje + 1;
-        }
-
-        if (lema === "piedad-letras") {
-            puntaje = puntaje + 1;
-        }
+// Recorremos las respuestas y sumamos los aciertos.
+for (let indice = 0; indice < respuestas.length; indice = indice + 1) {
+    if (respuestas[indice] === respuestasCorrectas[indice]) {
+        puntaje = puntaje + 1;
+    }
+}
 
         resultado.innerHTML = "Acertaste " + puntaje + " de 3 preguntas.";
     }
