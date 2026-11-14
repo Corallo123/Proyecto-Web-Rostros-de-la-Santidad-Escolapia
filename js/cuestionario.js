@@ -45,3 +45,14 @@ boton.addEventListener("click", function () {
             "Acertaste " + puntaje + " de " + respuestas.length + " preguntas.";
     }
 });
+const botonReiniciar = document.getElementById("reiniciar");
+
+botonReiniciar.addEventListener("click", function () {
+    const campos = ["lugar", "anio", "lema", "destinatarios", "navegacion"];
+
+    for (let indice = 0; indice < campos.length; indice = indice + 1) {
+        document.getElementById(campos[indice]).value = "";
+    }
+
+    resultado.innerHTML = "";
+});
