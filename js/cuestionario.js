@@ -32,7 +32,7 @@ boton.addEventListener("click", function () {
             "1597",
             "piedad-letras",
             "todos",
-            "nav"
+            "main"
         ];
 
         for (let indice = 0; indice < respuestas.length; indice = indice + 1) {
